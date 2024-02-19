@@ -1,0 +1,16 @@
+{
+  "name": "contacts",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.6",
+    "debug": "~4.3.4",
+    "express": "~4.18.2",
+    "express-validator": "^7.0.1",
+    "morgan": "~1.10.0",
+    "uuid": "^9.0.1"
+  }
+}
