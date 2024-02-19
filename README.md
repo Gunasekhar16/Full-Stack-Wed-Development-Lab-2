@@ -3,10 +3,13 @@ EmailId: gvelugubantla@hawk.iit.edu
 
 this is Lab 1 from course ITMD 542 Full-stack Development
 
-GIT repo:
+GIT repo: https://github.com/Gunasekhar16/Full-Stack-Wed-Development-Lab-2.git
 
 Project Description:
- This is about performing CRUD operation on a contact database. Have to perform viewing contact data, add data, edit and delete data.
+ This is about performing CRUD operations on a contact database. Have to perform viewing contact data, add data, edit and delete data.
+
+Development Environment: 
+ I used Visual Studio Code as my editor. I use Windows 11. node version: V20.9.0 with an npm version 10.2.3
 
 
 
@@ -16,8 +19,6 @@ Project Description:
    ```
 
 ## Usage
-
-  use postman for better results.
 
  Run the project using the following command:
    ```bash
@@ -33,7 +34,7 @@ Project Description:
    ```
    http://localhost:3000/contacts
    ```
-   with the JSON body like following:
+   with the JSON body like the following:
    ```json
    {
        "firstName": "Umair",
@@ -53,7 +54,7 @@ Project Description:
    ```
    http://localhost:3000/contacts/contact-uuid
    ```
-   Replace `contact-uuid` with the UUID of the contact you want to update, and include the updated information in the request body:
+   Replace `contact-id` with the UUID of the contact you want to update, and include the updated information in the request body:
    ```json
    {
        "firstName": "Jane",
