@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Delete Contact</h1>
+    <p>Enter the ID of the contact you want to delete:</p>
+    <form id="deleteForm" action="/contacts/:id" method="POST">
+        <label for="contactId">Contact ID:</label>
+        <input type="text" id="contactId" name="contactId" required>
+        <button type="submit" onclick="deleteContact(event)">Delete</button>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
