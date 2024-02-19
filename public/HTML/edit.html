@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h1>Edit Contact</h1>
+        <p>Enter the details of the contact you want to edit:</p>
+        <form action="/contacts/:id" method="POST">
+            
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            
+            <input type="hidden" name="_method" value="PUT">
+            
+            <button type="submit">Save Changes</button>
+        </form>
+    </body>
+</html>
