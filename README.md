@@ -1,3 +1,13 @@
+I am Gunasekhar Velugubantla with Cwid: A20529275
+EmailId: gvelugubantla@hawk.iit.edu
+
+this is Lab 1 from course ITMD 542 Full-stack Development
+
+GIT repo:
+
+Project Description:
+ This is about performing CRUD operation on a contact database. Have to perform viewing contact data, add data, edit and delete data.
+
 
 
  Install npm packages by running the following command in your project directory:
