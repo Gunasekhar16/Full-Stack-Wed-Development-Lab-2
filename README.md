@@ -1,66 +1,43 @@
-I am Gunasekhar Velugubantla with Cwid: A20529275
-EmailId: gvelugubantla@hawk.iit.edu
+<!DOCTYPE html>
+<html lang="en">
 
-this is Lab 1 from course ITMD 542 Full-stack Development
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact App</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
 
-GIT repo: https://github.com/Gunasekhar16/Full-Stack-Wed-Development-Lab-2.git
+<body>
+  <header class="container">
+    <h1>Welcome to the Contact App</h1>
+    <p class="lead">An application to manage your contacts efficiently.</p>
+  </header>
 
-Project Description:
- This is about performing CRUD operations on a contact database. Have to perform viewing contact data, add data, edit and delete data.
+  <main class="container mt-5">
+    <section>
+      <h2>Actions</h2>
+      <div class="btn-group">
+        <a href="/contacts" class="btn btn-primary">View All Contacts</a>
+        <a href="/contacts/add" class="btn btn-success">Add Contact</a>
+      </div>
+    </section>
 
-Development Environment: 
- I used Visual Studio Code as my editor. I use Windows 11. node version: V20.9.0 with an npm version 10.2.3
+    <section class="mt-5">
+      <h2>About Me</h2>
+      <p>I am Gunasekhar Velugubantla with CWID: A20529275. You can reach me via email at gvelugubantla@hawk.iit.edu.</p>
+    </section>
+  </main>
 
+  <footer class="container mt-5">
+    <p class="text-muted">&copy; 2024 Gunasekhar Velugubantla</p>
+  </footer>
 
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 
- Install npm packages by running the following command in your project directory:
-   ```bash
-   npm install
-   ```
-
-## Usage
-
- Run the project using the following command:
-   ```bash
-   node start
-   ```
-
- To view all the contacts, send a GET request to:
-   ```
-   http://localhost:3000/contacts
-   ```
-
- To create and add a new contact, send a POST request to:
-   ```
-   http://localhost:3000/contacts
-   ```
-   with the JSON body like the following:
-   ```json
-   {
-       "firstName": "Umair",
-       "lastName": "Tariq",
-       "email": "aliumer1080@gmail.com",
-       "notes": "Met at a networking event. Interested in web development projects."
-   }
-   ```
-
- To delete a contact, send a DELETE request to:
-   ```
-   http://localhost:3000/contacts/contact-uuid
-   ```
-   Replace `contact-uuid` with the UUID of the contact you want to delete.
-
- To update a contact, send a PUT request to:
-   ```
-   http://localhost:3000/contacts/contact-uuid
-   ```
-   Replace `contact-id` with the UUID of the contact you want to update, and include the updated information in the request body:
-   ```json
-   {
-       "firstName": "Jane",
-       "lastName": "Doe",
-       "email": "jane.doe@example.com",
-       "notes": "Updated note about this contact."
-   }
-   ```
-
+</html>
