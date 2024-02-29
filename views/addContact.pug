@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title Add Contact
+    // Include Bootstrap CSS for styling
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+  body
+    .container.mt-5
+      h2 Add Contact
+      form(action=`/contacts` method='post')
+        .form-group
+          label(for='firstName') First Name
+          input#firstName.form-control(type='text', name='firstName')
+        .form-group
+          label(for='lastName') Last Name
+          input#lastName.form-control(type='text', name='lastName')
+        .form-group
+          label(for='email') Email
+          input#email.form-control(type='email', name='email')
+        .form-group
+          label(for='notes') Notes
+          textarea#notes.form-control(name='notes')
+        button.btn.btn-primary(type='submit') Add Contact
+        a.btn.btn-secondary(href='/contacts') Cancel
+

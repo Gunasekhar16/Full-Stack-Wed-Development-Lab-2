@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title Action Feedback
+    // Include Bootstrap CSS for styling
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+  body
+    .container.mt-5
+      if successMessage
+        .alert.alert-success= successMessage
+      if errorMessage
+        .alert.alert-danger= errorMessage
+        
+    main.container.mt-5
+        section
+            h2 Actions
+            .btn-group
+            a.btn.btn-primary(href='/contacts') View All Contacts
+            a.btn.btn-success(href='/contacts/add') Add Contact

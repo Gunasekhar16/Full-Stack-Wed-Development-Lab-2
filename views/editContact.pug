@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title Edit Contact
+    // Include Bootstrap CSS for styling
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+  body
+    .container.mt-5
+      h2 Edit Contact
+      form(action=`/contacts/${contact.id}?_method=PUT` method='post')
+        .form-group
+          label(for='firstName') First Name
+          input#firstName.form-control(type='text', name='firstName', value=contact.firstName)
+        .form-group
+          label(for='lastName') Last Name
+          input#lastName.form-control(type='text', name='lastName', value=contact.lastName)
+        .form-group
+          label(for='email') Email
+          input#email.form-control(type='email', name='email', value=contact.email)
+        .form-group
+          label(for='notes') Notes
+          textarea#notes.form-control(name='notes')= contact.notes
+        button.btn.btn-primary(type='submit') Save Changes
+        a.btn.btn-secondary(href='/contacts') Cancel
+        input(type='hidden', name='_method', value='PUT')
+
